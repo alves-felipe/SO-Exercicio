@@ -81,6 +81,10 @@ public class RedesController {
 				}
 				line = buffer.readLine();
 			}
+			
+			buffer.close();
+			reader.close();
+			stream.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
